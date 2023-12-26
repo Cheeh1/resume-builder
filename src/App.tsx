@@ -1,6 +1,6 @@
-import Home from "./screens/Home";
+import RouterLink from "./router/RouterLink";
 const App = () => {
-  return <Home />;
+  return <RouterLink />;
 };
 
 export default App;

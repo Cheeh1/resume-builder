@@ -34,8 +34,15 @@ const Footer = () => {
         <div className="flex flex-col gap-3">
           <h3 className="text-sm text-primary">Updates right to your Inbox</h3>
           <div className="flex gap-3">
-            <input className="border rounded-md pl-2 text-sm w-56" type="text" name="" id="" />
-            <button className="bg-secondary py-1 px-4 rounded-md text-white text-sm font-semibold">Subscribe</button>
+            <input
+              className="border rounded-md pl-2 text-sm w-56"
+              type="text"
+              name=""
+              id=""
+            />
+            <button className="bg-secondary py-1 px-4 rounded-md text-white text-sm font-semibold">
+              Subscribe
+            </button>
           </div>
         </div>
         <div className="flex gap-2">
