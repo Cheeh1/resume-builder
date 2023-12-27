@@ -1,10 +1,10 @@
 import Resume from "../../components/Resume";
-import DashboardNav from "../../components/DashboardNav";
 import back from "../../assets/icons/back.svg";
 import about from "../../assets/icons/dark-about.svg";
 import download from "../../assets/icons/download.svg";
 import Button from "../../components/Button";
 import { useNavigate } from "react-router-dom";
+import DashboardTopNav from "../../components/DashboardTopNav";
 const Completed = () => {
   const navigate = useNavigate();
 
@@ -15,7 +15,7 @@ const Completed = () => {
   return (
     <>
       <main className="bg-[#F9F9F9] h-screen">
-        <DashboardNav />
+       <DashboardTopNav />
 
         <section className="relative flex flex-col-reverse md:flex-col gap-32 md:gap-10 xl:gap-0 xl:flex-row justify-between items-center">
           <div onClick={previousPage} className="">
