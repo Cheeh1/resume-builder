@@ -22,7 +22,7 @@ const Certifications = [
 const Resume = () => {
   return (
     <>
-      <div className="relative overflow-y-auto max-h-[32.5rem]">
+      <div className="relative">
         <section className="flex flex-col gap-2 pt-1">
           <div className="flex flex-col">
             <div className="flex flex-col gap-3 border-[1.5px] border-[#d2d3d5] w-[39rem] bg-white rounded-sm py-6 px-10">

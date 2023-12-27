@@ -17,7 +17,7 @@ const PersonalData = () => {
               Full Name
             </label>
             <input
-              className="py-2 px-3 w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
+              className="py-2 px-3 w-60 md:w-full xl:w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
               placeholder="John Doe"
               type="text"
               name="name"
@@ -32,7 +32,7 @@ const PersonalData = () => {
               Email address
             </label>
             <input
-              className="py-2 px-3 w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
+              className="py-2 px-3 w-60 md:w-full xl:w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
               placeholder="Johndoe@gmail.com"
               type="text"
               name="email"
@@ -47,7 +47,7 @@ const PersonalData = () => {
               Profession
             </label>
             <input
-              className="py-2 px-3 w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
+              className="py-2 px-3 w-60 md:w-full xl:w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
               placeholder="E.g Software Engineer"
               type="text"
               name="profession"
@@ -62,7 +62,7 @@ const PersonalData = () => {
               Address
             </label>
             <input
-              className="py-2 px-3 w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
+              className="py-2 px-3 w-60 md:w-full xl:w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
               placeholder="NG 1112 oreville"
               type="text"
               name="address"
@@ -78,7 +78,7 @@ const PersonalData = () => {
                 City
               </label>
               <input
-                className="py-2 px-3 w-36 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
+                className="py-2 px-3 w-28 md:w-48 xl:w-36 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
                 placeholder="Orlean"
                 type="text"
                 name="city"
@@ -93,7 +93,7 @@ const PersonalData = () => {
                 State
               </label>
               <input
-                className="py-2 px-3 w-40 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
+                className="py-2 px-3 w-28 md:w-48 xl:w-40 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
                 placeholder="New Jersey"
                 type="text"
                 name="state"

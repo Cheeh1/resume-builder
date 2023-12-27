@@ -15,7 +15,7 @@ const Education = () => {
               School Name
             </label>
             <input
-              className="py-2 px-3 w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
+              className="py-2 px-3 w-60 md:w-96 xl:w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
               placeholder="e.g University of Ilorin"
               type="text"
               name="schoolName"
@@ -30,7 +30,7 @@ const Education = () => {
               School Location
             </label>
             <input
-              className="py-2 px-3 w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
+              className="py-2 px-3 w-60 md:w-96 xl:w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
               placeholder="e.g Ilorin"
               type="text"
               name="schoolLocation"
@@ -45,7 +45,7 @@ const Education = () => {
               Degree/Program
             </label>
             <input
-              className="py-2 px-3 w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
+              className="py-2 px-3 w-60 md:w-96 xl:w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
               placeholder=""
               type="text"
               name="degree"
@@ -60,7 +60,7 @@ const Education = () => {
               Field of Study
             </label>
             <input
-              className="py-2 px-3 w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
+              className="py-2 px-3 w-60 md:w-96 xl:w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
               placeholder=""
               type="text"
               name="field"
@@ -72,7 +72,7 @@ const Education = () => {
               Entry Year
             </label>
             <input
-              className="py-2 px-3 w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
+              className="py-2 px-3 w-60 md:w-96 xl:w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
               type="month"
               name="entry"
               id="entry"
@@ -86,7 +86,7 @@ const Education = () => {
               Graduation Year
             </label>
             <input
-              className="py-2 px-3 w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
+              className="py-2 px-3 w-60 md:w-96 xl:w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
               type="month"
               name="graduation"
               id="graduation"

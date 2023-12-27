@@ -2,6 +2,7 @@ import { Outlet, Link, useLocation } from "react-router-dom";
 import Resume from "../../components/Resume";
 import DashboardNav from "../../components/DashboardNav";
 import list from "../../assets/icons/list.svg";
+import listmobile from "../../assets/icons/listmobile.svg";
 
 const Links = [
   {
@@ -40,13 +41,22 @@ const Layout = () => {
   const { pathname } = useLocation();
 
   return (
-    <main className="flex flex-col bg-[#E4E7EB]">
+    <main className="flex flex-col bg-[#E4E7EB] h-screen">
       <DashboardNav />
 
-      <section className="flex gap-5">
-        <nav className="relative flex flex-col gap-20 pt-10 pb-18 bg-[#ffffff] border-r-2 border-[#dedede]">
-          <img className="absolute top-3 right-3 w-5" src={list} alt="list" />
-          <div className="flex flex-col gap-8">
+      <section className="flex gap-5 md:gap-10 xl:gap-5">
+        <nav className="relative flex flex-col gap-12 pt-10 pb-18 bg-[#ffffff] border-r-2 border-[#dedede] w-24 md:w-72 xl:w-64">
+          <img
+            className="absolute hidden md:block xl:block top-3 right-3 w-5"
+            src={list}
+            alt="list"
+          />
+          <img
+            className="absolute top-3 md:hidden xl:hidden right-3 w-5"
+            src={listmobile}
+            alt="list"
+          />
+          <div className="flex flex-col gap-5">
             {Links.map((link, index) => (
               <Link
                 to={link.path}
@@ -54,11 +64,13 @@ const Layout = () => {
                 className={`${
                   pathname === link.path
                     ? "bg-[#EB575733] font-semibold text-dark py-3"
-                    : "hover:bg-[#EB575733] font-medium text-primary hover:w-full hover:py-3"
-                } flex gap-3 items-center px-10 `}
+                    : "hover:bg-[#EB575733] font-medium text-primary"
+                } flex gap-3 items-center py-3 px-10`}
               >
                 <img className="" src={link.img} alt={link.name} />
-                <p className="text-sm capitalize">{link.name}</p>
+                <p className="hidden md:block xl:block text-sm capitalize">
+                  {link.name}
+                </p>
               </Link>
             ))}
           </div>
@@ -75,7 +87,9 @@ const Layout = () => {
 
         <Outlet />
 
-        <Resume />
+        <div className="hidden xl:block overflow-y-auto max-h-[32.5rem]">
+          <Resume />
+        </div>
       </section>
     </main>
   );

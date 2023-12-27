@@ -16,7 +16,7 @@ const Certification = () => {
               Certification #1
             </label>
             <input
-              className="py-2 px-3 w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
+              className="py-2 px-3 w-60 md:w-96 xl:w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
               placeholder="e.g Frontend development certficate"
               type="text"
               name="skill1"
@@ -28,7 +28,7 @@ const Certification = () => {
               Certification #2
             </label>
             <input
-              className="py-2 px-3 w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
+              className="py-2 px-3 w-60 md:w-96 xl:w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
               placeholder="e.g Certificate of Design"
               type="text"
               name="skill2"
@@ -40,7 +40,7 @@ const Certification = () => {
               Certification #3
             </label>
             <input
-              className="py-2 px-3 w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
+              className="py-2 px-3 w-60 md:w-96 xl:w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
               placeholder="e.g Certificate of Engineering"
               type="text"
               name="skill3"

@@ -15,7 +15,7 @@ const ContactInfo = () => {
               Phone Number
             </label>
             <input
-              className="py-2 px-3 w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
+              className="py-2 px-3 w-60 md:w-96 xl:w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
               placeholder="+234 81******"
               type="text"
               name="phone"
@@ -30,7 +30,7 @@ const ContactInfo = () => {
               Linkedin Profile Link
             </label>
             <input
-              className="py-2 px-3 w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
+              className="py-2 px-3 w-60 md:w-96 xl:w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
               placeholder="e.g https/johndoe"
               type="url"
               name="linkedin"
@@ -45,7 +45,7 @@ const ContactInfo = () => {
               GitHub Profile Link
             </label>
             <input
-              className="py-2 px-3 w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
+              className="py-2 px-3 w-60 md:w-96 xl:w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
               placeholder="e.g https/johndoe"
               type="url"
               name="github"
@@ -53,11 +53,14 @@ const ContactInfo = () => {
             />
           </div>
           <div className="flex flex-col gap-2">
-            <label htmlFor="portfolio link" className="text-[#404653E5] text-sm">
+            <label
+              htmlFor="portfolio link"
+              className="text-[#404653E5] text-sm"
+            >
               Portfolio Link
             </label>
             <input
-              className="py-2 px-3 w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
+              className="py-2 px-3 w-60 md:w-96 xl:w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
               placeholder="e.g https/johndoe"
               type="url"
               name="portfolio"

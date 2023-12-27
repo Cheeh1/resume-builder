@@ -15,7 +15,7 @@ const Experience = () => {
               Company
             </label>
             <input
-              className="py-2 px-3 w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
+              className="py-2 px-3 w-60 md:w-96 xl:w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
               placeholder="E.g Google"
               type="text"
               name="company"
@@ -27,7 +27,7 @@ const Experience = () => {
               Employer
             </label>
             <input
-              className="py-2 px-3 w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
+              className="py-2 px-3 w-60 md:w-96 xl:w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
               placeholder="Employer’s name"
               type="text"
               name="employer"
@@ -39,7 +39,7 @@ const Experience = () => {
               Role
             </label>
             <input
-              className="py-2 px-3 w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
+              className="py-2 px-3 w-60 md:w-96 xl:w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
               placeholder="E.g Software Engineer"
               type="text"
               name="role"
@@ -51,7 +51,7 @@ const Experience = () => {
               Address
             </label>
             <input
-              className="py-2 px-3 w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
+              className="py-2 px-3 w-60 md:w-96 xl:w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
               placeholder="NG 1112 oreville"
               type="text"
               name="address"
@@ -64,7 +64,7 @@ const Experience = () => {
                 Start Date
               </label>
               <input
-                className="py-2 px-3 w-36 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
+                className="py-2 px-3 w-28 md:w-40 xl:w-36 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
                 placeholder="MM/YY"
                 type="month"
                 name="start"
@@ -76,7 +76,7 @@ const Experience = () => {
                 Finish Date
               </label>
               <input
-                className="py-2 px-3 w-40 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
+                className="py-2 px-3 w-28 md:w-52 xl:w-40 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
                 placeholder="MM/YY"
                 type="month"
                 name="finish"

@@ -14,18 +14,18 @@ const Completed = () => {
 
   return (
     <>
-      <main className="bg-[#F9F9F9]">
+      <main className="bg-[#F9F9F9] h-screen">
         <DashboardNav />
 
-        <section className="relative flex justify-between items-center">
+        <section className="relative flex flex-col-reverse md:flex-col gap-32 md:gap-10 xl:gap-0 xl:flex-row justify-between items-center">
           <div onClick={previousPage} className="">
             <img
-              className="absolute top-5 left-5 w-5 cursor-pointer"
+              className="absolute top-28 md:top-10 xl:top-10 left-5 w-8 xl:w-5 cursor-pointer"
               src={back}
               alt="back"
             />
           </div>
-          <div className="flex relative px-20 flex-col gap-3">
+          <div className="flex relative xl:px-20 flex-col gap-3">
             <h2 className="text-dark text-4xl font-semibold">
               Congratulations!
             </h2>
@@ -43,16 +43,19 @@ const Completed = () => {
               />
             </div>
           </div>
-          <div className="flex flex-col gap-1 pt-2">
-            <div className="flex justify-between pr-5">
-              <p className="text-secondary cursor-pointer text-[12px] font-medium">
+          <div className="flex flex-col gap-1 pt-5 xl:pt-2">
+            <div className="flex gap-64 md:justify-between xl:gap-0 xl:justify-between xl:pr-5">
+              <p className="text-secondary cursor-pointer text-[12px] font-semibold">
                 Preview
               </p>
-              <p className="text-[#0073E6] cursor-pointer text-[12px] font-medium">
+              <p className="text-[#0073E6] cursor-pointer text-[12px] font-semibold">
                 Edit
               </p>
             </div>
-            <Resume />
+
+            <div className="hidden md:block xl:block overflow-y-auto max-h-[30rem]">
+              <Resume />
+            </div>
           </div>
         </section>
       </main>
