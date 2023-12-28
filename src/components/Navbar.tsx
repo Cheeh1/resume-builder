@@ -1,6 +1,7 @@
-import logo from "../assets/icons/logo.svg";
-import Button from "./Button";
 import { Link, useLocation } from "react-router-dom";
+import Button from "./Button";
+import logo from "../assets/icons/logo.svg";
+import listmobile from "../assets/icons/listmobile.svg";
 
 const Links = [
   { name: "Home", path: "/" },
@@ -13,10 +14,10 @@ const Navbar = () => {
   const { pathname } = useLocation();
 
   return (
-    <nav className="flex justify-between px-20 py-5 items-center">
+    <nav className="flex justify-between px-5 xl:px-20 py-5 items-center border-b">
       <img src={logo} alt="logo" />
 
-      <div className="flex gap-10">
+      <div className="hidden md:flex xl:flex gap-10">
         {Links.map((link, index) => (
           <Link
             to={link.path}
@@ -32,7 +33,9 @@ const Navbar = () => {
         ))}
       </div>
 
-      <Button children="Get Started" className={""} />
+      <Button children="Get Started" className={"hidden md:block xl:block"} />
+
+      <img className="xl:hidden md:hidden" src={listmobile} alt="list" />
     </nav>
   );
 };

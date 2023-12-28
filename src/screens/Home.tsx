@@ -10,13 +10,13 @@ const Home = () => {
   return (
     <main className="py-5">
       <Navbar />
-      <section className="flex justify-around items-center">
+      <section className="flex flex-col md:flex-row xl:flex-row gap-10 md:gap-10 xl:gap-0 justify-around items-center px-5 md:px-10 xl:px-0 pt-28 md:pt-10 xl:pt-10">
         <section className="flex flex-col gap-4 items-start">
           <h1 className="text-dark text-[40px] w-80 font-bold leading-none">
             <span className="text-secondary text-[55px]">Create</span> a career
             in tech.
           </h1>
-          <p className="w-96 text-primary">
+          <p className="xl:w-96 text-primary">
             The template includes carefully structured sections for personal
             information, summary or objective, work experience, education,
             skills, projects, certifications, and more. You can easily customize
@@ -37,7 +37,7 @@ const Home = () => {
               </div>
               <div className="flex flex-col gap-1">
                 <p className="text-primary font-medium">Bio</p>
-                <p className="text-[#404653B2] font-medium w-96 text-sm">
+                <p className="text-[#404653B2] font-medium xl:w-96 text-sm">
                   I’m a frontend developer with 3years experience in ReactJs and
                   VueJs
                 </p>
@@ -50,7 +50,7 @@ const Home = () => {
             <p className="text-primary font-medium w-52 text-sm">
               Cloud Engineer | Yep!, USA March 2022 - Present
             </p>
-            <p className="w-[30rem] text-[#404653B2] text-sm capitalize">
+            <p className="xl:w-[30rem] text-[#404653B2] text-sm capitalize">
               I am Christian Chiemela
               <br />
               A cloud engineer, A Nigerian with the passion for creating
@@ -77,17 +77,17 @@ const Home = () => {
           Features
         </h2>
 
-        <div className="flex justify-between px-20 items-center">
+        <div className="flex flex-col md:flex-row xl:flex-row gap-72 md:gap-14 xl:gap-0 justify-between px-10 xl:px-20 items-center">
           <div className="flex flex-col gap-5">
             <div className="flex flex-col gap-1">
               <p className="text-dark font-medium text-lg">Templates</p>
-              <p className="text-primary text-sm w-[30rem]">
+              <p className="text-primary text-sm xl:w-[30rem]">
                 A variety of pre-designed and customizable resume templates
                 catering to different industries, roles, and design preferences.
               </p>
             </div>
             <img
-              className="w-[30rem]"
+              className="w-80 xl:w-[30rem]"
               src="/images/feature-img.png"
               alt="feature"
             />
@@ -95,7 +95,7 @@ const Home = () => {
               <p className="text-dark font-medium text-lg">
                 Customization Options
               </p>
-              <p className="text-primary text-sm w-[30rem]">
+              <p className="text-primary text-sm xl:w-[30rem]">
                 Ability to customize templates by changing colors, layouts, and
                 adding personal branding elements, drag-and-drop functionality
                 to rearrange sections and content blocks.
@@ -105,20 +105,20 @@ const Home = () => {
 
           <div className="relative flex flex-col gap-8">
             <img
-              className="w-72 absolute bottom-40 -left-28"
+              className="xl:w-72 md:w-64 md:bottom-48 absolute bottom-56 xl:bottom-40 xl:-left-28"
               src={arrow1}
               alt="arrow"
             />
             <div className="flex flex-col gap-2">
               <p className="text-dark font-medium text-lg">Free Cover Letter</p>
-              <p className="text-primary text-sm w-[30rem]">
+              <p className="text-primary text-sm xl:w-[30rem]">
                 With each of our professionally designed resume templates,
                 you'll receive a FREE cover letter template that's perfectly
                 matched to your chosen resume style. Our cover letter templates
                 are designed to help you:
               </p>
               <img
-                className="w-72 absolute top-32 -left-28"
+                className="xl:w-72 md:w-40 hidden md:block xl:block absolute md:top-40 xl:top-32 xl:-left-28"
                 src={arrow2}
                 alt="arrow"
               />
@@ -127,16 +127,16 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="relative flex justify-between px-20">
-        <div className="z-10 flex flex-col gap-2">
+      <section className="relative flex flex-col md:flex-row xl:flex-row gap-20 md:gap-10 xl:gap-0 px-10 justify-between xl:px-20">
+        <div className="z-10 flex flex-col gap-5 xl:gap-2">
           <h2 className="font-medium text-dark text-4xl w-80 leading-10">
             Join the ceVBuilder family
           </h2>
-          <p className="w-96 text-primary text-sm">
+          <p className="xl:w-96 md:w-80 text-primary text-sm">
             We're thrilled to welcome you to the ceVBuilder family, where your
             journey to crafting exceptional resumes begins!
           </p>
-          <Button children="Join ceVBuilder" className="" />
+          <Button children="Join ceVBuilder" className="w-40" />
         </div>
         <div className="z-10">
           <img
@@ -146,25 +146,28 @@ const Home = () => {
           />
         </div>
         <img
-          className="absolute left-6 top-20 h-56"
+          className="absolute right-12 md:left-5 w-80 xl:left-6 top-32 xl:top-20 h-28 md:h-36 xl:h-56"
           src="/images/transparent.png"
           alt="transparent"
         />
       </section>
 
-      <section className="relative py-40 flex flex-col pl-28 gap-5">
+      <section className="relative py-20 md:pt-36 xl:py-40 flex flex-col px-10 xl:pl-28 gap-5">
         <h2 className="text-secondary font-medium text-3xl">
           About ceVBuilder
         </h2>
-        <p className="w-[39rem] text-primary text-sm">
+        <p className="xl:w-[39rem] text-primary text-sm">
           Are you ready to take your career journey to the next level? Look no
           further than our state-of-the-art Resume Builder application! We
           understand that crafting a compelling resume is your ticket to landing
           your dream job, and our platform is designed to empower you in this
           endeavor.
         </p>
-        <img className="absolute w-40 right-28" src={about} alt="about" />
-        <img className="absolute w-10 left-80" src={about} alt="about" />
+        <img
+          className="absolute w-10 md:left-64 right-20 xl:left-80"
+          src={about}
+          alt="about"
+        />
       </section>
       <Footer />
     </main>

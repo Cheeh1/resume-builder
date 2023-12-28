@@ -8,7 +8,7 @@ interface Props {
 const Button: FC<Props> = ({ children, className }) => {
   return (
     <button
-      className={`bg-secondary text-sm text-white rounded-md py-2 px-6 font-semibold ${className}`}
+      className={`bg-secondary text-sm text-white rounded-md py-4 px-6 font-semibold ${className}`}
     >
       {children}
     </button>
