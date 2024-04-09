@@ -8,7 +8,7 @@ const Layout = () => {
     <main className="flex flex-col bg-[#E4E7EB] h-screen">
       <DashboardTopNav />
 
-      <section className="flex gap-5 md:gap-10 xl:gap-5">
+      <section className="flex gap-3 md:gap-10 xl:gap-5">
         <DashboardSideNav />
 
         <Outlet />

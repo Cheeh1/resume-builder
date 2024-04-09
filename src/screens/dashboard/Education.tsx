@@ -1,14 +1,20 @@
+import { useContext } from "react";
+import { ProgressContext } from "../../context/ProgressContext";
 import { useNavigate } from "react-router-dom";
+
+
 const Education = () => {
   const navigate = useNavigate();
+  const {goToNextSection} = useContext(ProgressContext);
 
   const nextPage = () => {
     navigate("/dashboard/contactInfo");
+    goToNextSection();
   };
 
   return (
     <>
-      <form className="flex flex-col gap-3 pt-10 bg-[#E4E7EB]" action="">
+      <form className="flex flex-col gap-3 pt-5 bg-[#E4E7EB]" action="">
         <div className="flex flex-col gap-2">
           <div className="flex flex-col gap-2">
             <label htmlFor="school name" className="text-[#404653E5] text-sm">

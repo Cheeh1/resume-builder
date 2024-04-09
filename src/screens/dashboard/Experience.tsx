@@ -1,9 +1,14 @@
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { ProgressContext } from "../../context/ProgressContext";
+
 const Experience = () => {
   const navigate = useNavigate();
+  const {goToNextSection} =  useContext(ProgressContext);
 
   const nextPage = () => {
     navigate("/dashboard/technicalSkills");
+    goToNextSection();
   };
 
   return (

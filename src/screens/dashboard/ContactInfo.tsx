@@ -1,9 +1,15 @@
+import { useContext } from "react";
+import { ProgressContext } from "../../context/ProgressContext";
 import { useNavigate } from "react-router-dom";
+
+
 const ContactInfo = () => {
   const navigate = useNavigate();
+  const {goToNextSection} = useContext(ProgressContext);
 
   const nextPage = () => {
     navigate("/dashboard/certification");
+    goToNextSection();
   };
 
   return (

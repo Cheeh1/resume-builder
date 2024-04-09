@@ -1,10 +1,16 @@
+import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { ProgressContext } from "../../context/ProgressContext";
+
 const PersonalData = () => {
   const navigate = useNavigate();
+  const {goToNextSection} = useContext(ProgressContext);
 
   const nextPage = () => {
+    goToNextSection(); // Update currentSection after navigating to the next section
     navigate("/dashboard/experience");
   };
+
   return (
     <>
       <form className="flex flex-col gap-7 pt-5 bg-[#E4E7EB]" action="">

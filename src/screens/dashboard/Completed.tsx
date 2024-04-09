@@ -37,7 +37,7 @@ const Completed = () => {
             <div className="relative">
               <Button children="Download" className="w-56" />
               <img
-                className="right-36 w-4 top-2.5 absolute"
+                className="right-36 w-4 top-4 absolute"
                 src={download}
                 alt="download"
               />

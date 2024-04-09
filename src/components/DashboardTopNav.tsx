@@ -3,7 +3,7 @@ import logo from "../assets/icons/logo.svg";
 
 const DashboardTopNav = () => {
   return (
-    <div className="flex justify-between py-5 px-5 border-b-2 border-[#dedede]">
+    <div className="flex justify-between py-8 xl:py-5 px-5 border-b-2 border-[#dedede]">
       <img src={logo} alt="logo" />
       <div className="flex border rounded-md border-secondary gap-2 px-2 items-center">
         <button className="text-secondary text-sm">Share</button>
