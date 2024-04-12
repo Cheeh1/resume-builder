@@ -41,8 +41,6 @@ const DashboardSideNav = () => {
   const { pathname } = useLocation();
   const { progressPercentage } = useContext(ProgressContext);
 
-  // const progressPercentage: number = ((currentSection + 1) / 6) * 100;
-
   return (
     <nav className="relative flex flex-col gap-20 md:gap-8 xl:gap-16 py-10 bg-[#ffffff] border-r-2 border-[#dedede] w-24 md:w-72 xl:w-64">
       <img
@@ -58,7 +56,7 @@ const DashboardSideNav = () => {
       <div className="flex flex-col gap-3">
         {Links.map((link, index) => (
           <Link
-            to={link.path}
+            to=""
             key={index}
             className={`${
               pathname === link.path

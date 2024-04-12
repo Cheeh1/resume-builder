@@ -1,26 +1,41 @@
 import { useContext } from "react";
 import { ProgressContext } from "../../context/ProgressContext";
 import { useNavigate } from "react-router-dom";
+import { useForm, SubmitHandler } from "react-hook-form";
+import FormButton from "../../components/FormButton";
 
+interface FormData {
+  phone: number;
+  linkedin: string;
+  github: string;
+  portfolio: string;
+}
 
 const ContactInfo = () => {
   const navigate = useNavigate();
-  const {goToNextSection} = useContext(ProgressContext);
+  const { goToNextSection } = useContext(ProgressContext);
 
-  const nextPage = () => {
+  const { register, handleSubmit } = useForm<FormData>();
+
+  const onSubmit: SubmitHandler<FormData> = (data) => {
     navigate("/dashboard/certification");
-    goToNextSection();
+    goToNextSection(); // Update currentSection after navigating to the next section
+    console.log(data);
   };
 
   return (
     <>
-      <form className="flex flex-col gap-10 pt-10 bg-[#E4E7EB]" action="">
+      <form
+        className="flex flex-col gap-10 pt-10 bg-[#E4E7EB]"
+        onSubmit={handleSubmit(onSubmit)}
+      >
         <div className="flex flex-col gap-5">
           <div className="flex flex-col gap-2">
             <label htmlFor="phone number" className="text-[#404653E5] text-sm">
               Phone Number
             </label>
             <input
+              {...register("phone", { required: true })}
               className="py-2 px-3 w-60 md:w-96 xl:w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
               placeholder="+234 81******"
               type="text"
@@ -36,6 +51,7 @@ const ContactInfo = () => {
               Linkedin Profile Link
             </label>
             <input
+              {...register("linkedin")}
               className="py-2 px-3 w-60 md:w-96 xl:w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
               placeholder="e.g https/johndoe"
               type="url"
@@ -51,6 +67,7 @@ const ContactInfo = () => {
               GitHub Profile Link
             </label>
             <input
+              {...register("github")}
               className="py-2 px-3 w-60 md:w-96 xl:w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
               placeholder="e.g https/johndoe"
               type="url"
@@ -66,6 +83,7 @@ const ContactInfo = () => {
               Portfolio Link
             </label>
             <input
+              {...register("portfolio")}
               className="py-2 px-3 w-60 md:w-96 xl:w-80 rounded-sm text-sm border-[1.5px] border-[#d2d3d5] placeholder:text-[#66666680]"
               placeholder="e.g https/johndoe"
               type="url"
@@ -74,12 +92,7 @@ const ContactInfo = () => {
             />
           </div>
         </div>
-        <input
-          className="bg-secondary py-2 text-white rounded-sm cursor-pointer font-semibold"
-          type="submit"
-          value="Next"
-          onClick={nextPage}
-        />
+        <FormButton />
       </form>
     </>
   );

@@ -1,4 +1,4 @@
-import Button from "../components/Button";
+import Button from "../components/FormButton";
 import profile from "../assets/icons/profile.svg";
 import arrow1 from "../assets/icons/arrow-1.svg";
 import arrow2 from "../assets/icons/arrow-2.svg";

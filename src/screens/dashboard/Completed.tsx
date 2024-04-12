@@ -2,7 +2,7 @@ import Resume from "../../components/Resume";
 import back from "../../assets/icons/back.svg";
 import about from "../../assets/icons/dark-about.svg";
 import download from "../../assets/icons/download.svg";
-import Button from "../../components/Button";
+import AuthButton from "../../components/AuthButton";
 import { useNavigate } from "react-router-dom";
 import DashboardTopNav from "../../components/DashboardTopNav";
 const Completed = () => {
@@ -15,7 +15,7 @@ const Completed = () => {
   return (
     <>
       <main className="bg-[#F9F9F9] h-screen">
-       <DashboardTopNav />
+        <DashboardTopNav />
 
         <section className="relative flex flex-col-reverse md:flex-col gap-32 md:gap-10 xl:gap-0 xl:flex-row justify-between items-center">
           <div onClick={previousPage} className="">
@@ -35,9 +35,9 @@ const Completed = () => {
               your choice.
             </p>
             <div className="relative">
-              <Button children="Download" className="w-56" />
+              <AuthButton children="Download" className="w-64" />
               <img
-                className="right-36 w-4 top-4 absolute"
+                className="right-32 w-4 top-5 absolute"
                 src={download}
                 alt="download"
               />
