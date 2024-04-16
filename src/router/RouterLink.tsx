@@ -9,6 +9,9 @@ import ContactInfo from "../screens/dashboard/ContactInfo";
 import Certification from "../screens/dashboard/Certification";
 import Completed from "../screens/dashboard/Completed";
 
+import AuthLayout from "../screens/auth/AuthLayout";
+import Register from "../screens/auth/Register";
+
 const RouterLink = () => {
   return (
     <Router>
@@ -26,6 +29,10 @@ const RouterLink = () => {
           <Route path="/dashboard/certification" element={<Certification />} />
         </Route>
         <Route path="/completed" element={<Completed />} />
+
+        <Route path="/auth" element={<AuthLayout />}>
+          <Route index element={<Register />} />
+        </Route>
       </Routes>
     </Router>
   );

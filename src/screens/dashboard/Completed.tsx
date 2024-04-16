@@ -2,7 +2,6 @@ import Resume from "../../components/Resume";
 import back from "../../assets/icons/back.svg";
 import about from "../../assets/icons/dark-about.svg";
 import download from "../../assets/icons/download.svg";
-import AuthButton from "../../components/AuthButton";
 import { useNavigate } from "react-router-dom";
 import DashboardTopNav from "../../components/DashboardTopNav";
 const Completed = () => {
@@ -35,7 +34,9 @@ const Completed = () => {
               your choice.
             </p>
             <div className="relative">
-              <AuthButton children="Download" className="w-64" />
+              <button className="bg-secondary text-white rounded-md py-4 px-6 font-semibold w-64">
+                Download
+              </button>
               <img
                 className="right-32 w-4 top-5 absolute"
                 src={download}

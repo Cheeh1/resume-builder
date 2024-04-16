@@ -1,4 +1,4 @@
-import Button from "../components/FormButton";
+import { useNavigate } from "react-router-dom";
 import profile from "../assets/icons/profile.svg";
 import arrow1 from "../assets/icons/arrow-1.svg";
 import arrow2 from "../assets/icons/arrow-2.svg";
@@ -7,6 +7,8 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <main className="py-5">
       <Navbar />
@@ -23,7 +25,12 @@ const Home = () => {
             these sections to fit your unique background.
           </p>
 
-          <Button children="Create Resume for free" className="" />
+          <button
+            onClick={() => navigate("/auth")}
+            className="bg-secondary text-white rounded-md py-4 px-6 font-semibold w-64"
+          >
+            Create Resume for free
+          </button>
         </section>
         <section className="flex flex-col gap-3">
           <div className="border rounded-md flex gap-5 py-5 px-8 items-start">
@@ -128,15 +135,20 @@ const Home = () => {
       </section>
 
       <section className="relative flex flex-col md:flex-row xl:flex-row gap-20 md:gap-10 xl:gap-0 px-10 justify-between xl:px-20">
-        <div className="z-10 flex flex-col gap-5 xl:gap-2">
-          <h2 className="font-medium text-dark text-4xl w-80 leading-10">
+        <div className="z-10 flex flex-col gap-5 xl:gap-3">
+          <h2 className="font-semibold text-dark text-4xl w-80 leading-10">
             Join the ceVBuilder family
           </h2>
           <p className="xl:w-96 md:w-80 text-primary text-sm">
             We're thrilled to welcome you to the ceVBuilder family, where your
             journey to crafting exceptional resumes begins!
           </p>
-          <Button children="Join ceVBuilder" className="w-40" />
+          <button
+            onClick={() => navigate("/auth")}
+            className="bg-secondary text-white rounded-md py-4 px-6 font-semibold w-64"
+          >
+            Join ceVBuilder
+          </button>
         </div>
         <div className="z-10">
           <img

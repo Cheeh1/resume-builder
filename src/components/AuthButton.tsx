@@ -1,17 +1,18 @@
 import { FC, ReactNode } from "react";
 
 interface Props {
-    children: ReactNode;
-    className: string;
+  children: ReactNode;
+  // className: string;
 }
 
-const AuthButton: FC<Props> = ({children, className}) => {
-    return (
-      <button
-        className={`bg-secondary text-sm text-white rounded-md py-4 px-6 font-semibold ${className}`}
-      >
-        {children}
-      </button>
-    );
-}
+const AuthButton: FC<Props> = ({ children }) => {
+  return (
+    <button
+      type="submit"
+      className="w-full border rounded-md py-3 text-white bg-secondary font-medium"
+    >
+      {children}
+    </button>
+  );
+};
 export default AuthButton;
