@@ -7,11 +7,11 @@ const ForgotPassword = () => {
     <section className="flex flex-col gap-16 pt-20">
       <div className="flex flex-col gap-1 text-center">
         <h2 className="text-2xl font-medium">Forgot Password</h2>
-        <p className="text-[#666666] tracking-widest">
+        <p className="text-[#666666] text-sm xl:text-md tracking-widest">
           Enter the email address associated with your account
         </p>
       </div>
-      <form action="" className="flex flex-col px-32 gap-5">
+      <form action="" className="flex flex-col px-10 xl:px-32 gap-5">
         <div className="flex flex-col gap-1">
           <label htmlFor="email address" className="text-[#404653E5] text-sm">
             Email address

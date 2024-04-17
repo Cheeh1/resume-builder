@@ -11,14 +11,14 @@ const OtpConfirmation = () => {
         </p>
       </div>
 
-      <div className="flex px-5 gap-5 justify-center">
+      <div className="flex px-5 xl:gap-5 gap-3 justify-center">
         <input className="py-5 border-2 w-20" type="text" name="" id="" />
         <input className="border-2 w-20 py-5" type="text" name="" id="" />
         <input className="border-2 w-20 py-5" type="text" name="" id="" />
         <input className="border-2 w-20 py-5" type="text" name="" id="" />
       </div>
 
-      <div className="px-20">
+      <div className="px-5 xl:px-20">
         <AuthButton children="Continue" />
       </div>
     </section>

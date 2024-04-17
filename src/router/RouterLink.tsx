@@ -10,7 +10,7 @@ import Certification from "../screens/dashboard/Certification";
 import Completed from "../screens/dashboard/Completed";
 
 import AuthLayout from "../screens/auth/AuthLayout";
-import Register from "../screens/auth/Register";
+import Authentication from "../screens/auth/Authentication";
 import ForgotPassword from "../screens/auth/ForgotPassword";
 import CreatePassword from "../screens/auth/CreatePassword";
 import OtpConfirmation from "../screens/auth/OtpConfirmation";
@@ -36,7 +36,7 @@ const RouterLink = () => {
         <Route path="/completed" element={<Completed />} />
 
         <Route path="/auth" element={<AuthLayout />}>
-          <Route index element={<Register />} />
+          <Route index element={<Authentication />} />
           <Route path="/auth/forgotpassword" element={<ForgotPassword />} />
           <Route path="/auth/createpassword" element={<CreatePassword />} />
           <Route path="/auth/otpConfirmation" element={<OtpConfirmation />} />

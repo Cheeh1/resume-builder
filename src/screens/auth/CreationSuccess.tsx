@@ -4,14 +4,14 @@ import { useNavigate } from "react-router-dom";
 const CreationSuccess = () => {
   const navigate = useNavigate();
   return (
-    <section className="flex justify-center">
+    <section className="bg-[#f6f4f4] h-screen flex justify-center px-5 xl:px-0">
       <div className="flex flex-col gap-5 pt-40">
         <img
           className="bg-[#CBF4CF] rounded-full w-40 ml-20"
           src={success}
           alt="success"
         />
-        <p className="text-[#666666] tracking-widest">
+        <p className="text-[#666666] text-center xl:text-left tracking-widest">
           Your account has been created successfully
         </p>
 
