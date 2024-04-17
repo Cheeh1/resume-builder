@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import AuthButton from "../../components/AuthButton";
 import google from "../../assets/icons/google.svg";
 // import back from "../../assets/icons/authback.svg";
@@ -10,6 +11,8 @@ const Register = () => {
   const [activeTab, setActiveTab] = useState<"register" | "login">("register");
   const [showPassword, setShowPassword] = useState<boolean>(false);
   const [confirmPassword, setConfirmPassword] = useState<boolean>(false);
+
+  const navigate = useNavigate();
 
   const handleTabClick = (tab: "register" | "login") => {
     setActiveTab(tab);
@@ -214,7 +217,7 @@ const Register = () => {
                         )}
                       </div>
                     </div>
-                    <button className="text-[12px] text-blue-500 text-right">
+                    <button onClick={() => navigate("/auth/forgotpassword")} className="text-[12px] text-blue-500 text-right">
                       Forgotten password?
                     </button>
                   </div>

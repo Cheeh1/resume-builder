@@ -11,6 +11,11 @@ import Completed from "../screens/dashboard/Completed";
 
 import AuthLayout from "../screens/auth/AuthLayout";
 import Register from "../screens/auth/Register";
+import ForgotPassword from "../screens/auth/ForgotPassword";
+import CreatePassword from "../screens/auth/CreatePassword";
+import OtpConfirmation from "../screens/auth/OtpConfirmation";
+import ResetSuccess from "../screens/auth/ResetSuccess";
+import CreationSuccess from "../screens/auth/CreationSuccess";
 
 const RouterLink = () => {
   return (
@@ -32,7 +37,12 @@ const RouterLink = () => {
 
         <Route path="/auth" element={<AuthLayout />}>
           <Route index element={<Register />} />
+          <Route path="/auth/forgotpassword" element={<ForgotPassword />} />
+          <Route path="/auth/createpassword" element={<CreatePassword />} />
+          <Route path="/auth/otpConfirmation" element={<OtpConfirmation />} />
+          <Route path="/auth/resetsuccess" element={<ResetSuccess />} />
         </Route>
+        <Route path="/creationsuccess" element={<CreationSuccess />} />
       </Routes>
     </Router>
   );

@@ -7,10 +7,10 @@ const AuthLayout = () => {
   return (
     <>
       <main className="flex">
-        <section className="bg h-screen w-1/2">
+        <section className="bg h-screen w-full">
           <div className="logo h-screen py-40"></div>
         </section>
-        <div className="bg-[#f6f4f4]">
+        <div className="bg-[#f6f4f4] w-full">
           <img onClick={() => navigate(-1)} className="mt-5 ml-5 cursor-pointer" src={back} alt="back" />
           <Outlet />
         </div>
