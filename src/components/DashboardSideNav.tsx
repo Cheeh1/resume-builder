@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { ProgressContext } from "../context/ProgressContext";
 import list from "../assets/icons/list.svg";
 import listmobile from "../assets/icons/listmobile.svg";
@@ -55,8 +55,7 @@ const DashboardSideNav = () => {
       />
       <div className="flex flex-col gap-3">
         {Links.map((link, index) => (
-          <Link
-            to=""
+          <div
             key={index}
             className={`${
               pathname === link.path
@@ -68,7 +67,7 @@ const DashboardSideNav = () => {
             <p className="hidden md:block xl:block text-sm capitalize">
               {link.name}
             </p>
-          </Link>
+          </div>
         ))}
       </div>
       <div className="flex gap-1 xl:gap-0 flex-col px-3 xl:px-8">
