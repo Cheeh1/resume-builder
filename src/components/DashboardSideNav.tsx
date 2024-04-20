@@ -61,7 +61,7 @@ const DashboardSideNav = () => {
             className={`${
               pathname === link.path
                 ? "bg-[#EB575733] font-semibold text-dark py-3"
-                : "hover:bg-[#EB575733] font-medium text-primary"
+                : "font-medium text-primary"
             } flex gap-3 items-center py-3 px-8`}
           >
             <img className="" src={link.img} alt={link.name} />
